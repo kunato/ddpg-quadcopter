@@ -81,7 +81,7 @@ class Landing(BaseTask):
         if timestamp > self.max_duration:
             reward -= 50.0
             done = True
-        elif state[2] < (self.target_position[2]+0.3): # !Done, we are landed.
+        elif state[2] < (self.target_position[2]+0.3): # !Done, we are landed 
             print("Landed")
             reward += 50.0
             done = True

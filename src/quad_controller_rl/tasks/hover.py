@@ -31,9 +31,9 @@ class Hover(BaseTask):
         self.max_duration = 5.0  # secs
         self.max_error_position = 8.0  # distance units
         self.target_position = np.array([0.0, 0.0, 10.0])  # target position to hover at
-        self.weight_position = 0.6
+        self.weight_position = 1.0
         self.target_velocity = np.array([0.0, 0.0, 0.0])  # target velocity (ideally should stay in place)
-        self.weight_velocity = 0.4
+        self.weight_velocity = 1.5
 
     def reset(self):
         self.start_z = np.random.normal(20, 4)
